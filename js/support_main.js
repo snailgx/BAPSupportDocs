@@ -54,11 +54,10 @@ $(function(){
                     url:ApiUrl + 'documents/feedback',
                     type:"post",
                     data:JSON.stringify({
-                        documentId:'暂无',
+                        title:$("#main").find("h1").eq(0).text(),
                         url:window.location.href,
-                        isUseful:yesOrNo,
-                        content:contentStr,
-                        userId:'暂无'
+                        isUseful:parseInt(yesOrNo),
+                        content:contentStr
                     }),
                     dataType:"json",
                     beforeSend:function(xhr){
