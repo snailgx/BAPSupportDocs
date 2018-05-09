@@ -1,0 +1,147 @@
+<section class="bap-header  navbar-fixed-top">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.baperp.com/index.html"><img src="image/logo_bap.png"/></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <section class="bap-s-p-box navbar-right">
+                    <section class="bap-search-box p-size fLeft"><input type="text" placeholder="请输入……"></section>
+                    <section class="bap-search-btn fLeft"><img src="image/btn-search.png" /></section>
+                    <section class="bap-person-box fLeft"><img src="image/btn-person.png" /></section>
+                    <section class="clear-float"></section>
+                </section>
+
+                <ul class="nav navbar-nav bap-menu-list">
+                    <!--<li><a href="index.html">首页</a></li>-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">产品<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="http://www.baperp.com/product_bapNicer5.html">BAP NICER 5</a></li>
+                            <li><a href="http://www.baperp.com/product_bapERPCloud.html">BAP ERP Cloud</a></li>
+                            <li><a href="javascript:lmyAlertByTime('该页面正在建设中，敬请期待……',1500);">BAP企业门户&移动应用</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">行业<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="javascript:lmyAlertByTime('该页面正在建设中，敬请期待……',1500);">机械与自动化</a></li>
+                            <li><a href="javascript:lmyAlertByTime('该页面正在建设中，敬请期待……',1500);">医疗</a></li>
+                            <li><a href="javascript:lmyAlertByTime('该页面正在建设中，敬请期待……',1500);">服装与纺织</a></li>
+                            <li><a href="javascript:lmyAlertByTime('该页面正在建设中，敬请期待……',1500);">建筑与设计</a></li>
+                            <li><a href="javascript:lmyAlertByTime('该页面正在建设中，敬请期待……',1500);">食品与保健品</a></li>
+                            <li><a href="javascript:lmyAlertByTime('该页面正在建设中，敬请期待……',1500);">塑料与化学</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://www.baperp.com/train_list.html">培训</a></li>
+                    <li><a href="https://dreamingleeds.github.io/BAPSupportDocs/">支持</a></li>
+                    <!--<li><a href="support_main.html">支持</a></li>-->
+                    <!--<li class="dropdown">-->
+                        <!--<a class="dropdown-toggle" data-toggle="dropdown">支持<span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu" role="menu">-->
+                            <!--<li><a  href="support_main.html">文档支持</a></li>-->
+                            <!--<li><a  href="download_main.html?dType=0">下载频道</a></li>-->
+                            <!--&lt;!&ndash;<li><a  href="">BAP NICER 5</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="">BAP ERP Cloud</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="">BAP企业门户&移动应用</a></li>&ndash;&gt;-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <li><a href="http://www.baperp.com/cooperative_partner.html">合作伙伴</a></li>
+                    <!--<li class="dropdown">-->
+                        <!--<a class="dropdown-toggle" data-toggle="dropdown">合作伙伴<span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu" role="menu">-->
+                            <!--<li><a href="cooperative_partner.html#cz">查找合作伙伴</a></li>-->
+                            <!--<li><a href="cooperative_partner.html#cw">成为合作伙伴</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <li><a href="http://www.baperp.com/about_main.html">关于</a></li>
+                    <!--<li class="dropdown">-->
+                        <!--<a class="dropdown-toggle" data-toggle="dropdown">关于<span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu" role="menu">-->
+                            <!--<li><a  href="">公司信息</a></li>-->
+                            <!--<li><a href="">客户案例</a></li>-->
+                            <!--<li><a href="">招贤纳士</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+</section>
+
+<script type="text/javascript">
+    $(function(){
+
+        /*判断高亮显示*/
+        var nowUrl=window.location.href;
+        var urlArray=nowUrl.split("/").length;
+        nowUrl=nowUrl.split("/")[urlArray-1];
+
+        $(".bap-menu-list li a").each(function(index, element) {
+            var nowHref=$(this).attr("href");
+            if(nowUrl==nowHref){
+                $(this).parents("li").addClass("active");
+            }
+        });
+
+        /*悬浮出现下拉*/
+        $(".navbar .navbar-nav>li.dropdown").on('mouseenter',function(){
+            if(!$(this).hasClass('open') && $(document).width()>=768){
+                $(this).addClass('open');
+            }
+        });
+        $(".navbar .navbar-nav>li.dropdown").on('mouseleave',function(){
+            if($(this).hasClass('open') && $(document).width()>=768){
+                $(this).removeClass('open');
+            }
+        });
+
+        /*搜索框样式*/
+        $('.bap-s-p-box .bap-search-btn').on('click',function(){
+            if($(this).prev().hasClass('p-size') || $(this).prev().find('input').val()!=""){
+                $(this).prev().removeClass('p-size');
+            }else{
+                $(this).prev().addClass('p-size');
+            }
+
+            if($(this).prev().find('input').val()!=""){
+                lmyAlertByTime('建设中，敬请期待……',1500);
+            }
+        });
+        $('.bap-s-p-box .bap-search-box input').keydown(function(event) {
+            if (event.keyCode == "13") {//keyCode=13是回车键
+                if($(this).val()!=""){
+                    lmyAlertByTime('建设中，敬请期待……',1500);
+                }else{
+                    lmyAlertByTime('请填写搜索关键词',1500);
+                }
+            }
+        });
+
+        /*头像*/
+        if(BapLoginTel!="" && BapLoginPwd!="" && BapLoginResBody!=""){
+            if((JSON.parse(BapLoginResBody)).avatarAddr!=null && (JSON.parse(BapLoginResBody)).avatarAddr!=undefined && (JSON.parse(BapLoginResBody)).avatarAddr!=""){
+                $(".bap-person-box img").css('border-radius','30px').attr('src',getOSSFile((JSON.parse(BapLoginResBody)).avatarAddr,imgCompressUrl1));
+            }else{
+                $(".bap-person-box img").css('border-radius','30px').attr('src','image/userAvatar.png');
+            }
+        }
+        $(".bap-person-box").click(function(){
+            if(BapLoginTel=="" || BapLoginPwd=="" || BapLoginResBody==""){
+                window.location.href = 'http://www.baperp.com/login.html';
+            }else{
+                window.location.href = 'http://www.baperp.com/personal_center.html';
+            }
+        });
+    });
+</script>
