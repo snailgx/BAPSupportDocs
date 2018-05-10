@@ -1,27 +1,27 @@
 @charset "utf-8";
 
 body{font-family:"microsoft yahei";}
-.support-main-body{margin: 138px auto 0px;}
+.support-main-body{margin: 80px auto 0px;}
 @media (max-width: 992px) {
-    .support-main-body{margin-top: 94px;}
+    .support-main-body{margin-top: 50px;}
 }
 
 /*下载*/
-.download-fix-box{position: fixed;top:80px; left: 0px; z-index: 101; width: 100%; height: 58px;background: #7f7f7f;}
-.download-fix-box .dropdown .btn{height: 58px;border-radius: 0px;font-size: 18px;padding-left: 16px;padding-right: 16px;background:transparent;color: #fff; border:none; box-shadow: none !important;}
-.download-fix-box .dropdown .btn span{margin-left: 7px;font-size: 12px;vertical-align: top;padding-top:6px;color: #fff;}
-.download-fix-box .dropdown-menu{box-shadow: none !important;margin-top: 0px;border-radius: 0px;border: #999 solid 1px;padding: 12px 0px;min-width: 290px;}
-.download-fix-box .dropdown-menu li a{padding: 12px 16px;font-size: 16px;text-decoration: none;}
-.download-fix-box .dropdown-menu li a:hover{background: #f2f2f2;}
-.download-fix-box .dropdown.open .btn{background: #fff; }
-.download-fix-box .dropdown.open .btn span{color:#999; }
-@media (max-width: 991px) {
-    .download-fix-box{top: 50px;height: 44px;}
-    .download-fix-box .dropdown .btn{height: 44px;font-size: 16px;padding-left: 14px;padding-right: 15px;}
-    .download-fix-box .dropdown .btn span{margin-left: 4px;padding-top:5px;}
-    .download-fix-box .dropdown-menu{min-width: 0px;padding: 0px 0px;}
-    .download-fix-box .dropdown-menu li a{padding: 10px 14px;font-size: 14px;}
-}
+/*.download-fix-box{position: fixed;top:80px; left: 0px; z-index: 101; width: 100%; height: 58px;background: #7f7f7f;}*/
+/*.download-fix-box .dropdown .btn{height: 58px;border-radius: 0px;font-size: 18px;padding-left: 16px;padding-right: 16px;background:transparent;color: #fff; border:none; box-shadow: none !important;}*/
+/*.download-fix-box .dropdown .btn span{margin-left: 7px;font-size: 12px;vertical-align: top;padding-top:6px;color: #fff;}*/
+/*.download-fix-box .dropdown-menu{box-shadow: none !important;margin-top: 0px;border-radius: 0px;border: #999 solid 1px;padding: 12px 0px;min-width: 290px;}*/
+/*.download-fix-box .dropdown-menu li a{padding: 12px 16px;font-size: 16px;text-decoration: none;}*/
+/*.download-fix-box .dropdown-menu li a:hover{background: #f2f2f2;}*/
+/*.download-fix-box .dropdown.open .btn{background: #fff; }*/
+/*.download-fix-box .dropdown.open .btn span{color:#999; }*/
+/*@media (max-width: 991px) {*/
+    /*.download-fix-box{top: 50px;height: 44px;}*/
+    /*.download-fix-box .dropdown .btn{height: 44px;font-size: 16px;padding-left: 14px;padding-right: 15px;}*/
+    /*.download-fix-box .dropdown .btn span{margin-left: 4px;padding-top:5px;}*/
+    /*.download-fix-box .dropdown-menu{min-width: 0px;padding: 0px 0px;}*/
+    /*.download-fix-box .dropdown-menu li a{padding: 10px 14px;font-size: 14px;}*/
+/*}*/
 
 /*侧边菜单导航*/
 .support-box{padding-bottom: 120px;min-height: 654px;}
