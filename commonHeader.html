@@ -8,14 +8,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://www.baperp.com/index.html"><img src="image/logo_bap.png"/></a>
+                <a class="navbar-brand" href="../index.html"><img src="../image/logo_bap.png"/></a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <section class="bap-s-p-box navbar-right">
                     <section class="bap-search-box p-size fLeft"><input type="text" placeholder="请输入……"></section>
-                    <section class="bap-search-btn fLeft"><img src="image/btn-search.png" /></section>
-                    <section class="bap-person-box fLeft"><img src="image/btn-person.png" /></section>
+                    <section class="bap-search-btn fLeft"><img src="../image/btn-search.png" /></section>
+                    <section class="bap-person-box fLeft"><img src="../image/btn-person.png" /></section>
                     <section class="clear-float"></section>
                 </section>
 
@@ -24,50 +24,22 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">产品<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="http://www.baperp.com/product_bapNicer5.html">BAP NICER 5</a></li>
-                            <li><a href="http://www.baperp.com/product_bapERPCloud.html">BAP ERP Cloud</a></li>
+                            <li><a href="../product_bapNicer5.html">BAP NICER 5</a></li>
+                            <li><a href="../product_bapERPCloud.html">BAP ERP Cloud</a></li>
                             <li><a href="javascript:lmyAlertByTime('该页面正在建设中，敬请期待……',1500);">BAP企业门户&移动应用</a></li>
                         </ul>
                     </li>
                     <li><a href="javascript:lmyAlertByTime('该页面正在建设中，敬请期待……',1500);">行业</a></li>
-                    <!--<li class="dropdown">-->
-                        <!--<a class="dropdown-toggle" data-toggle="dropdown">行业<span class="caret"></span></a>-->
-                        <!--<ul class="dropdown-menu" role="menu">-->
-                            <!--<li><a href="javascript:lmyAlertByTime('该页面正在建设中，敬请期待……',1500);">机械与自动化</a></li>-->
-                            <!--<li><a href="javascript:lmyAlertByTime('该页面正在建设中，敬请期待……',1500);">医疗</a></li>-->
-                            <!--<li><a href="javascript:lmyAlertByTime('该页面正在建设中，敬请期待……',1500);">服装与纺织</a></li>-->
-                            <!--<li><a href="javascript:lmyAlertByTime('该页面正在建设中，敬请期待……',1500);">建筑与设计</a></li>-->
-                            <!--<li><a href="javascript:lmyAlertByTime('该页面正在建设中，敬请期待……',1500);">食品与保健品</a></li>-->
-                            <!--<li><a href="javascript:lmyAlertByTime('该页面正在建设中，敬请期待……',1500);">塑料与化学</a></li>-->
-                        <!--</ul>-->
-                    <!--</li>-->
-                    <li><a href="http://www.baperp.com/train_list.html">培训</a></li>
-                    <!--<li><a href="http://www.baperp.com/BAPSupportDocs/">支持</a></li>-->
+                    <li><a href="../train_list.html">培训</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">支持<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a  href="http://www.baperp.com/BAPSupportDocs/">产品帮助</a></li>
-                            <li><a  href="http://www.baperp.com/download_main.html?dType=0">下载频道</a></li>
+                            <li><a  href="../support/">产品帮助</a></li>
+                            <li><a  href="../download_main.html?dType=0">下载频道</a></li>
                         </ul>
                     </li>
-                    <li><a href="http://www.baperp.com/cooperative_partner.html">合作伙伴</a></li>
-                    <!--<li class="dropdown">-->
-                        <!--<a class="dropdown-toggle" data-toggle="dropdown">合作伙伴<span class="caret"></span></a>-->
-                        <!--<ul class="dropdown-menu" role="menu">-->
-                            <!--<li><a href="cooperative_partner.html#cz">查找合作伙伴</a></li>-->
-                            <!--<li><a href="cooperative_partner.html#cw">成为合作伙伴</a></li>-->
-                        <!--</ul>-->
-                    <!--</li>-->
-                    <li><a href="http://www.baperp.com/about_main.html">关于</a></li>
-                    <!--<li class="dropdown">-->
-                        <!--<a class="dropdown-toggle" data-toggle="dropdown">关于<span class="caret"></span></a>-->
-                        <!--<ul class="dropdown-menu" role="menu">-->
-                            <!--<li><a  href="">公司信息</a></li>-->
-                            <!--<li><a href="">客户案例</a></li>-->
-                            <!--<li><a href="">招贤纳士</a></li>-->
-                        <!--</ul>-->
-                    <!--</li>-->
-
+                    <li><a href="../cooperative_partner.html">合作伙伴</a></li>
+                    <li><a href="../about_main.html">关于</a></li>
                 </ul>
 
 
@@ -130,14 +102,14 @@
             if((JSON.parse(BapLoginResBody)).avatarAddr!=null && (JSON.parse(BapLoginResBody)).avatarAddr!=undefined && (JSON.parse(BapLoginResBody)).avatarAddr!=""){
                 $(".bap-person-box img").css('border-radius','30px').attr('src',getOSSFile((JSON.parse(BapLoginResBody)).avatarAddr,imgCompressUrl1));
             }else{
-                $(".bap-person-box img").css('border-radius','30px').attr('src','image/userAvatar.png');
+                $(".bap-person-box img").css('border-radius','30px').attr('src','../image/userAvatar.png');
             }
         }
         $(".bap-person-box").click(function(){
             if(BapLoginTel=="" || BapLoginPwd=="" || BapLoginResBody==""){
-                window.location.href = 'http://www.baperp.com/login.html';
+                window.location.href = '../login.html';
             }else{
-                window.location.href = 'http://www.baperp.com/personal_center.html';
+                window.location.href = '../personal_center.html';
             }
         });
     });

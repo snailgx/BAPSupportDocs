@@ -14,8 +14,8 @@ $(function(){
 
         },
         loadHeadFoot:function(){
-            $("#commonHeader").load('commonHeader.html?v=bap2.0.7');
-            $("#commonFooter").load('commonFooter.html?v=bap2.0.7');
+            $("#commonHeader").load('commonHeader.html?v='+BAPVersion);
+            $("#commonFooter").load('commonFooter.html?v='+BAPVersion);
         },
         changeLeftMenu:function(){
             $(".support-box .panel-heading").on('click',function(){
