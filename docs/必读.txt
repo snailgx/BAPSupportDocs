@@ -1,8 +1,8 @@
 
-BAP ERP Nicer 5 文件夹 --- BAP ERP Nicer 5 文档根目录
+BAPERPNicer5 文件夹 --- BAP ERP Nicer 5 文档根目录
 
-BAP Business Cloud 文件夹 --- BAP Business Cloud 文档根目录
+BAPBusinessCloud 文件夹 --- BAP Business Cloud 文档根目录
 
-BAP ERP Cloud 文件夹 --- BAP ERP Cloud 文档根目录
+BAPERPCloud 文件夹 --- BAP ERP Cloud 文档根目录
 
-BAP ePortal 文件夹 --- BAP企业门户文档 文档根目录
+BAPePortal 文件夹 --- BAP企业门户文档 文档根目录
