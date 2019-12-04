@@ -2,12 +2,12 @@
   "Languages":[
     {
       "DisplayName" : "简体中文",
-      "Code" : "zh-cn",
+      "Code" : "zh-Hans",
       "IsDefault": true
     },
     {
       "DisplayName" : "繁体中文",
-      "Code" : "zh-tc",
+      "Code" : "zh-Hant",
       "IsDefault": false
     },
     {
